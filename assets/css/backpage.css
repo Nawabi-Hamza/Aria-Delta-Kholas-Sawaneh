@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    max-width: 800px;
+    margin:0 auto;
+}
+
+/* Table Designs */
+table{
+    width: 100%;
+}
+table td, 
+table th{
+    border: 1px solid;
+    font-size: 11px;
+    padding: .2em;
+    text-align: center;
+}
+
+table td{
+    height: 1.3em;
+}
+table tr th{
+    width: 20%;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.school-name{
+    height: 40px;
+}
+.subject-exam-info th{
+    text-align: start;
+    height: 1.3em;
+}
+.subject-exam-info tr:nth-child(1) th{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.two-curve{
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    > .left{
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+    > .border{
+       position:absolute;
+       border: 1px slid black;
+       right:0;
+       background: black;
+       width:100%; 
+       transform: rotate(-10deg);
+    }
+    > .right{
+        position: absolute;
+        top:0;
+        left: 20px;
+    }
+}
+
+

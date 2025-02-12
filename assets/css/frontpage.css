@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    max-width: 850px;
+    margin:0 auto;
+}
+.container-fluid{
+    max-width:1450px;
+    margin:0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    height: 180px;
+    align-items: center;
+    padding: 0 1em;
+}
+main{
+    border: 1px solid;
+}
+
+.header .left-image, 
+.header .right-image{
+    width: 25%;
+    > img{
+        width: 100%;
+    }
+}
+.header .main-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    > h1{
+        font-size: 1.2em;
+    }
+}
+
+/* Table Designs */
+table{
+    width: 100%;
+}
+table td, 
+table th{
+    border: 1px solid;
+    font-size: .6em;
+    padding: .2em;
+    text-align: center;
+}
+.fw-bold{
+    font-weight: bold;
+}
+
+/* /////////////////////////////////// */
+/* First row tables  */
+.first-table-row,
+.third-table-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3em;
+}
+
+
+.first-table-row table td{
+    font-weight: bold;
+    height: 3.5em;
+}
+.left table th, 
+.left table td{
+    width: calc(100%/3);
+} 
+.first-table-row .student-more-info table tr td
+{
+    height: 1em;
+}
+.first-table-row .student-more-info table tr:nth-child(1){
+    width: 50%;
+}
+.row-data{
+    width: 100%;
+    > td{
+        width: 40%
+    }
+}
+.profile-img{
+    width: 120px;
+}
+
+/* /////////////////////////////////// */
+/* second row tables  */
+.second-row{
+    border: 1px solid;
+    padding:.4em;
+    font-size: .8em;
+    margin: .2em 0;
+}
+
+/* /////////////////////////////////// */
+/* third row tables  */
+.third-table-row .right td{
+    height: 1.3em;
+}
+.third-table-row .fire-student td{
+    width: 80%;
+}
+/* /////////////////////////////////// */
+/* fourth row tables  */
+.fourth-table-row table tr{
+    font-size: 1.3em;
+    > th{
+        width: calc(100%/8);
+    }
+    > td{
+        height: 1.1em;
+    }
+    > .w-70{
+        width: 70%;
+    }
+}
+.fourth-table-row .classes tr td:nth-child(1){
+    font-weight: bold;
+} 
+
+
